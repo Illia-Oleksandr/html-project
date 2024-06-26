@@ -94,8 +94,8 @@ burgers!</p>
         <div class="divider"></div>
         <p class="our-burgers__subtitle">Hungry? Don't miss our selection of juicy burgers prepared just for you!</p>
         <div class="our-burgers__carousel carousel">
-            <article class="carousel__slide">
-                <img src="img/about-us-carousel-double-beef.png" alt="">
+            <article class="carousel__slide slide">
+                <img width="200" src="img/about-us-carousel-double-beef.png" alt="">
                 <h3>Double Beaf</h3>
                 <p>2 patties, home-made sauce, tomato, and cheddar cheese</p>
                 <span>$ 12.00</span>
@@ -116,8 +116,19 @@ burgers!</p>
                         <span>As a food truck, we offer low prices on all burgers.</span>
                     </div>
                 </div>
+                <a href="#contacts" class="slide__link">Order Now</a>
             </article>
         </div>
+    </section>
+    <section class="contacts">
+        <img width="1600" src="img/hire-us.jpg" alt="Hire Us">
+        <div class="contacts__details"></div>
+        <form action="https://formspree.io/f/xovaayrq" method="post" class="contacts__form"></form>
+        <input type="text" name="full-name" placeholder="Enter your full name*" required>
+        <input type="tel" name="phone" placeholder="Enter your phone number*" required>
+        <input type="email" name="email" placeholder="Enter your email*" required>
+        <textarea name="message" placeholder="Enter your message"></textarea>
+        <input type="submit" value="Send">
     </section>
 </main>
 <footer class="">
