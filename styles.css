@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+#app {
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    /* Цей стиль центрує картки горизонтально */
+    text-align: left;
+    /* Цей стиль зміщує текст у внутрішніх елементах вліво */
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    margin: 0 auto;
+    /* Цей стиль вирівнює картки по центру в контейнері */
+}
+
+.card.clicked {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+}
+
+.card:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+}
